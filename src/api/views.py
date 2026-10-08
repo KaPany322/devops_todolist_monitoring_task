@@ -6,7 +6,6 @@ from lists.models import Todo, TodoList
 
 from django.http import HttpResponse
 from django.utils import timezone
-import time
 from prometheus_client import CONTENT_TYPE_LATEST, Counter, generate_latest
 
 startup_time = timezone.now()

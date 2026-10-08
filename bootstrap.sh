@@ -14,4 +14,3 @@ helm dependency build ".infrastructure/helm-chart/todoapp"
 
 helm upgrade --install "$RELEASE_NAME" ".infrastructure/helm-chart/todoapp" \
   --namespace "$APP_NAMESPACE" --create-namespace \
-  --wait --timeout 5m
